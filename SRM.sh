@@ -14,7 +14,7 @@ echo "CPU-Usage: $CPU_Usage"
 if (( $(echo "$CPU_Usage > 1.25" | bc -l) )); then
     echo "CPU Crossed ❌"
     Diff=$(echo "$CPU_Usage - 1.25" | bc -l)
-    echo "$(date '+%Y-%m-%d %H:%M:%S') - CPU Crossed: ${CPU_Usage}% (Over by ${Diff}%)" >> srm_logs.txt
+    echo "$(date '+%Y-%m-%d %H:%M:%S') - CPU Crossed: ${CPU_Usage}% (Over by ${Diff}%)" >> /mnt/c/Users/DELL/Desktop/Shell_Scripting_Basic_Projects/srm_logs.txt
 else
     echo "CPU Safe ✅"
 fi
@@ -30,7 +30,7 @@ echo $Mem_Usage
 if (( $(echo "$Mem_Usage > 6.4" | bc -l) ));then
        echo "Memory Exceeded ⭕"
        Diff=$(echo "$Mem_Usage - 6.4" | bc -l)
-       echo "$(date '+%Y-%m-%d %H:%M:%S') - Memory-Crossed: ${Mem_Usage}% (Over by ${Diff}%)" >> srm_logs.txt
+       echo "$(date '+%Y-%m-%d %H:%M:%S') - Memory-Crossed: ${Mem_Usage}% (Over by ${Diff}%)" >> /mnt/c/Users/DELL/Desktop/Shell_Scripting_Basic_Projects/srm_logs.txt
 else
 	echo "Memory Safe ✅"
 fi
@@ -41,7 +41,7 @@ Disk_Usage=$(df / | awk 'NR==2 {printf "%.2f", ($3/$2)*100}')
 if (( $(echo "$Disk_Usage>0.25" | bc -l) ));then
 	echo "Disk USgae Crossed ❌"
 	Diff=$(echo "$Disk_Usage-0.25" | bc -l)
-	echo "$(date '+%Y-%m-%d %H:%M:%S') - Disk-Usage-Crossed: ${Disk_Usage}% (Over by ${Diff}%)" >> srm_logs.txt
+	echo "$(date '+%Y-%m-%d %H:%M:%S') - Disk-Usage-Crossed: ${Disk_Usage}% (Over by ${Diff}%)" >> /mnt/c/Users/DELL/Desktop/Shell_Scripting_Basic_Projects/srm_logs.txt
 else
 	echo "Disk Usage Safe ✅"
 fi
