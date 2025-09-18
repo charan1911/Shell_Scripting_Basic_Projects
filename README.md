@@ -1,3 +1,5 @@
+
+```markdown
 # 🐚 Shell Scripting Basic Projects  
 
 A collection of **basic Linux shell scripting projects** designed to automate repetitive tasks, track usage, and improve system reliability.  
@@ -135,3 +137,17 @@ Sometimes, the **simplest scripts create the smartest solutions**. 🚀
 ## 👨‍💻 Author
 
 📌 Created by [**Charan Gummadi**](https://github.com/charan1911)
+✨ Feel free to fork, modify, and contribute!
+
+---
+
+## 📜 License
+
+This project is open-source and free to use under the **MIT License**.
+
+---
+
+## 📝 Note
+
+Currently, I have **not added cron job automation** in this repo — all scripts are designed to run manually.
+You can extend them by adding your own cron jobs if you want automated execution.
