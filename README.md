@@ -1,5 +1,3 @@
-
-```markdown
 # 🐚 Shell Scripting Basic Projects  
 
 A collection of **basic Linux shell scripting projects** designed to automate repetitive tasks, track usage, and improve system reliability.  
